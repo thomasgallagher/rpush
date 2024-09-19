@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require "web-push"
+require "webpush"
 
 module Rpush
   module Daemon
@@ -10,7 +10,7 @@ module Rpush
       # We just override #perform to inject the http instance that is managed
       # by Rpush.
       #
-      class Request < ::WebPush::Request
+      class Request < ::Webpush::Request
         def perform(http)
           req = Net::HTTP::Post.new(uri.request_uri, headers)
           req.body = body
