@@ -40,7 +40,7 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'thor', ['>= 0.18.1', '< 2.0']
   s.add_runtime_dependency 'railties'
   s.add_runtime_dependency 'rainbow'
-  s.add_runtime_dependency 'webpush', '~> 1.0'
+  s.add_runtime_dependency 'web-push'
   s.add_runtime_dependency 'googleauth'
 
   s.add_development_dependency 'rake'
